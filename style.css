@@ -1,0 +1,36 @@
+/* style.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap');
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Custom hero background with a subtle overlay */
+.hero-bg {
+    background-image: url('https://placehold.co/1920x1080/1a202c/ffffff?text=Professional+Gym+Background');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.hero-bg::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.container {
+    max-width: 1280px;
+}
+
+/* Scroll-to-top button visibility */
+#scrollTopBtn {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+#scrollTopBtn.visible {
+    opacity: 1;
+}
